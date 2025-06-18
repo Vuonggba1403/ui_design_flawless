@@ -1,4 +1,4 @@
-import 'package:booking_app/screens/auth/login_screen.dart';
+import 'package:booking_app/screens/auth/register_screen.dart';
 import 'package:booking_app/screens/splash/splash_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -56,7 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.pop(context);
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => const LoginScreen()),
+          MaterialPageRoute(builder: (_) => const RegisterScreen()),
         );
       }
     } else {
@@ -142,7 +142,8 @@ class _SplashScreenState extends State<SplashScreen> {
                       if (contents[i].icon != null &&
                           contents[i].icon!.isNotEmpty)
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 0), // Reduced padding
+                          padding: const EdgeInsets.only(
+                              bottom: 0), // Reduced padding
                           child: Image.asset(contents[i].icon!, height: 250),
                         ),
 
@@ -221,17 +222,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
                       const SizedBox(height: 10),
 
-                      // Sign In Text (only on last page)
-                      if (currentIndex == contents.length - 1)
-                        const Text(
-                          "Already a member? Sign In",
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontFamily: 'Josefin_Sans',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                      // // Sign In Text (only on last page)
+                      // if (currentIndex == contents.length - 1)
+                      //   const Text(
+                      //     "Already a member? Sign In",
+                      //     style: TextStyle(
+                      //       fontSize: 14,
+                      //       color: Colors.white,
+                      //       fontFamily: 'Josefin_Sans',
+                      //       fontWeight: FontWeight.bold,
+                      //     ),
+                      //   ),
 
                       const SizedBox(height: 20),
                     ],
