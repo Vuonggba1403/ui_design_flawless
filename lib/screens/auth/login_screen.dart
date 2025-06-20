@@ -1,6 +1,7 @@
-import 'package:booking_app/home/home_screen.dart';
 import 'package:booking_app/widgets/custom_loading.dart';
 import 'package:flutter/material.dart';
+
+import '../../home/features/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
